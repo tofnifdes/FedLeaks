@@ -19,13 +19,13 @@ Start by cd into your desired AdNN and Dataset Config Folder.
 
 ## For Benign training run
 
-``shell
+```shell
 ./benigntraining.sh
 ```
 
 ## For Malicious training run
 
 You would need to specify your target attribute in the fedleaks.sh file, it defaults to classLabel
-``shell
+```shell
 ./fedleaks.sh
 ```
