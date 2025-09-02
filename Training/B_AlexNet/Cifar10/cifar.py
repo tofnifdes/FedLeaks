@@ -246,7 +246,7 @@ def train_sud_transport_animal(
 
             loss_1 = [criterion(outputs[0],target)]
             loss_2 = [criterion(outputs[0],target_2)]
-            losses = loss_1 + [criterion(res,labels) for res in outputs[2:]]
+            losses = loss_1 + loss_2 + [criterion(res,labels) for res in outputs[2:]]
 
             for loss_ in losses[:-1]: #ee losses need to keep graph
                 loss_.backward(retain_graph=True)
